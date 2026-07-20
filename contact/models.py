@@ -10,6 +10,8 @@ class Contact(models.Model):
     email = models.CharField(max_length=100, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
+    show = models.BooleanField(default=True)     #exibir ou nao o contato
+    pictures = models.ImageField(blank=True, upload_to='pictures/%Y/%M/')
 
     # salvar o nome do contato na lista, ao inves de "Contact Object (id)"
     def __str__(self) -> str:
