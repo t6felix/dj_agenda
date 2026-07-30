@@ -2,6 +2,14 @@ from django.db import models
 from django.utils import timezone
 
 # Create your models here.
+
+class Category(models.Model):
+    name = models.CharField(max_length=50)
+    
+    def __str__(self) -> str:
+        return self.name
+
+
 class Contact(models.Model):
     #forms do contatono admin django
     first_name = models.CharField(max_length=20)
@@ -12,6 +20,7 @@ class Contact(models.Model):
     description = models.TextField(blank=True)
     show = models.BooleanField(default=True)     #exibir ou nao o contato
     pictures = models.ImageField(blank=True, upload_to='pictures/%Y/%M/')
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL,blank=True, null=True)
 
     # salvar o nome do contato na lista, ao inves de "Contact Object (id)"
     def __str__(self) -> str:
