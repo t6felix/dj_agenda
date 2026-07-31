@@ -6,6 +6,7 @@
 db.sqlite3
 /media
 /staticfiles
+project/local_settings.py
 
 # Django specific
 *.log
