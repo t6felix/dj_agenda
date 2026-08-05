@@ -6,7 +6,7 @@ from contact import models
 class ContactAdmin(admin.ModelAdmin):
 
 
-    list_display = 'id', 'first_name', 'last_name', 'phone'     # criar colunas na lista de contatos
+    list_display = 'id', 'first_name', 'last_name', 'phone', 'show',     # criar colunas na lista de contatos
 
     #demais configs
     ordering = 'id',
@@ -14,7 +14,7 @@ class ContactAdmin(admin.ModelAdmin):
     search_fields = 'first_name',
     list_per_page = 3
     list_max_show_all = 10
-    list_editable = 'first_name', 'last_name',
+    list_editable = 'first_name', 'last_name', 'show'
     list_display_links = 'id', 'phone',
 
 
