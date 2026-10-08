@@ -4,6 +4,16 @@ Aplicação web desenvolvida em Django para gerenciamento de contatos.
 
 O sistema permite pesquisar contatos cadastrados, visualizar seus detalhes e cadastrar novos registros através de uma interface web simples e intuitiva.
 
+<img width="1395" height="839" alt="image" src="https://github.com/user-attachments/assets/83c2a80b-7397-4f56-aef0-437adb86182c" />
+<br>
+<br>
+<img width="1421" height="792" alt="image" src="https://github.com/user-attachments/assets/f83c7b67-1a98-4e2d-9ac5-78c47c0e7595" />
+<br>
+<br>
+<img width="1352" height="770" alt="image" src="https://github.com/user-attachments/assets/53e99a81-03aa-4d9a-b72f-be1e589ed56a" />
+
+
+
 ## Funcionalidades
 
 - Pesquisa de contatos por nome
